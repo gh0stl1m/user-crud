@@ -3,7 +3,6 @@ use actix_web::{get, App, HttpServer, Responder};
 #[get("/health")]
 async fn health_check() -> impl Responder {
     format!("Hello world!")
-
 }
 
 #[actix_web::main]
